@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">会议平台</string>
+    <string name="title">会议平台</string>
+    <string name="is">搜索</string>
+    <string name="ia">添加</string>
+    <string name="id">删除</string>
+    <string name="ir">修改</string>
+</resources>

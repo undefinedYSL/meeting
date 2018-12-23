@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_boardroom"
+        android:icon="@drawable/ic_boardroom"
+        android:title="会议室"/>
+    <item
+        android:id="@+id/nav_message"
+        android:icon="@drawable/ic_message"
+        android:title="消息"/>
+    <item
+        android:id="@+id/nav_maillist"
+        android:icon="@drawable/ic_maillist"
+        android:title="通讯录"/>
+    <item
+        android:id="@+id/nav_more"
+        android:icon="@drawable/ic_more"
+        android:title="更多"/>
+    </group>
+</menu>

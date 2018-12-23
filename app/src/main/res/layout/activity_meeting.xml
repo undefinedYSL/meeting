@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <include
+        layout="@layout/toolbar_title"
+        android:id="@+id/toolbar6">
+
+    </include>
+
+    <ScrollView
+    android:id="@+id/sv_meeting"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_meetingtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_meetingtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入会议标题"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_meetingdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_meetingdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入会议日期"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_meetingtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_meetingtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="请输入会议时间"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_meetingduration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="3">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_meetingduration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="请输入会议时长(分钟)"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_meetingsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_meetingsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:hint="请输入会议室"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_attendants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_attendants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入参加人员"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_meetingdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="300">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_meetingdescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入会议说明"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_submitmeeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="@color/colorsubmit"
+        android:text="提交"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="click"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

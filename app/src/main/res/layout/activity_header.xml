@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar_title"
+        android:id="@+id/toolbar5">
+    </include>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_header"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/lemon"
+        android:layout_below="@id/toolbar5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@id/civ_header"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorCursor"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_header1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="   公司名称:"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="B307实验室   "
+            android:textSize="20sp"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_below="@id/ll_header1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorCursor"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_header2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/line2"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="   公司负责人:"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="B307   "
+            android:textSize="20sp"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_below="@id/ll_header2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorCursor"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+
+</RelativeLayout>
